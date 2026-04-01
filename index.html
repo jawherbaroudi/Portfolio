@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawher Baroudi - Portfolio BUT RT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">JB.</div>
+        <ul class="nav-links">
+            <li><a href="#about">Profil</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets & Expériences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero">
+        <p class="subtitle">Bonjour, je m'appelle</p>
+        <h1>Jawher Baroudi.</h1>
+        <h2>Je sécurise et connecte les infrastructures.</h2>
+        <p class="description">
+            Étudiant en BUT Réseaux et Télécommunications à l'IUT de Villetaneuse. 
+            Passionné par la cybersécurité, l'administration système et le déploiement d'architectures réseaux.
+        </p>
+        <div class="button-group">
+            <a href="#contact" class="btn">Me contacter</a>
+            <a href="CV_Baroudi_Jawher.pdf" class="btn btn-outline" target="_blank">📄 Télécharger mon CV</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h3 class="section-title"><span>01.</span> Mon Profil</h3>
+        <p style="margin-bottom: 15px;">Actuellement en 2ème année de BUT Réseaux et Télécommunications à l'IUT de Villetaneuse, je suis un véritable passionné des infrastructures informatiques et de la cybersécurité.</p>
+        <p style="margin-bottom: 15px;">Mon profil se distingue par une double approche : une solide base technique (administration de serveurs, déploiement d'architectures réseaux, pentesting et développement Python) alliée à un excellent sens du relationnel. Mon expérience en tant que recruteur de donateurs m'a forgé une forte résilience, une grande aisance à l'oral et une capacité à m'adapter à tout type d'interlocuteur.</p>
+        <p>Que ce soit pour auditer une faille de sécurité, concevoir un réseau sous GNS3 ou automatiser une tâche système, j'aborde chaque défi technique avec rigueur et curiosité. Je suis aujourd'hui à la recherche d'un stage de 8 à 12 semaines pour mettre mon énergie et mes compétences au service d'une équipe professionnelle.</p>
+    </section>
+
+    <section id="skills">
+        <h3 class="section-title"><span>02.</span> Mes Compétences</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2.5rem;">Un mélange d'expertise technique et de compétences humaines forgées au fil de mes projets et de mon parcours professionnel.</p>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">🌐</span>
+                    <h4>Administration Réseaux</h4>
+                </div>
+                <div class="tags-container">
+                    <span class="tech-tag">Cisco (Switch/Routeur)</span>
+                    <span class="tech-tag">VLAN & Routage</span>
+                    <span class="tech-tag">DHCP / DNS</span>
+                    <span class="tech-tag">IPBX & VoIP</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">🛡️</span>
+                    <h4>Sécurité & Audit</h4>
+                </div>
+                <div class="tags-container">
+                    <span class="tech-tag">Pentest (Metasploit)</span>
+                    <span class="tech-tag">Scan (Nmap / Nessus)</span>
+                    <span class="tech-tag">Analyse (Wireshark)</span>
+                    <span class="tech-tag">Hardening OS</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">💻</span>
+                    <h4>Systèmes & Cloud</h4>
+                </div>
+                <div class="tags-container">
+                    <span class="tech-tag">Linux (Debian)</span>
+                    <span class="tech-tag">Windows Server</span>
+                    <span class="tech-tag">Microsoft 365</span>
+                    <span class="tech-tag">Samba / SharePoint</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">⌨️</span>
+                    <h4>Outils & Développement</h4>
+                </div>
+                <div class="tags-container">
+                    <span class="tech-tag">Python / Flask</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">GNS3 / Marionnet</span>
+                    <span class="tech-tag">VirtualBox</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">🤝</span>
+                    <h4>Compétences Humaines</h4>
+                </div>
+                <div class="tags-container">
+                    <span class="tech-tag soft-tag">Aisance à l'oral</span>
+                    <span class="tech-tag soft-tag">Résilience</span>
+                    <span class="tech-tag soft-tag">Sens du contact</span>
+                    <span class="tech-tag soft-tag">Travail en équipe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3 class="section-title"><span>03.</span> Projets & Expériences</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">💡 <em>Cliquez sur un projet pour afficher le résumé détaillé et le rapport.</em></p>
+        
+        <h4 class="category-title">🛡️ Cybersécurité & Audit</h4>
+        <div class="projects-grid">
+            
+            <div class="project-card clickable" onclick="openModal('modal-pentesting')">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Cybersecurity Code" class="project-image">
+                <div class="project-content">
+                    <h4>SAÉ - Découvrir le Pentesting</h4>
+                    <p>Audit intrusif sur un réseau virtuel (Kali, WinXP, Metasploitable). Exploitation de failles critiques (EternalBlue, Ghostcat, Samba).</p>
+                    <ul class="tech-list">
+                        <li>Kali Linux</li>
+                        <li>Metasploit</li>
+                        <li>Nessus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card clickable" onclick="openModal('modal-nasa')">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=600&q=80" alt="Space Galaxy NASA" class="project-image">
+                <div class="project-content">
+                    <h4>Rapport de Cyberattaque (NASA)</h4>
+                    <p>Analyse d'une cyberattaque ciblant le JPL de la NASA via un Raspberry Pi par le groupe APT10. Étude des failles et préconisations de sécurité.</p>
+                    <ul class="tech-list">
+                        <li>OSINT</li>
+                        <li>Analyse de Risques</li>
+                        <li>Hardening</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="category-title">🌐 Réseaux & Infrastructures</h4>
+        <div class="projects-grid">
+            
+            <div class="project-card clickable" onclick="openModal('modal-valence')">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Server Room" class="project-image">
+                <div class="project-content">
+                    <h4>SAÉ - Réseau multi-site (Valence)</h4>
+                    <p>Refonte complète du SI. Déploiement d'un Cluster Hyper-V, segmentation VLAN et PCA/PRA avec Veeam Backup.</p>
+                    <ul class="tech-list">
+                        <li>Hyper-V</li>
+                        <li>VLANs / WPA3</li>
+                        <li>Veeam Backup</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="Network Cables" class="project-image">
+                <div class="project-content">
+                    <h4>SAÉ - Architecture Réseau</h4>
+                    <p>Conception et déploiement d'une infrastructure réseau sous simulateur. Routage, VLANs et services d'entreprise.</p>
+                    <ul class="tech-list">
+                        <li>GNS3</li>
+                        <li>Marionnet</li>
+                        <li>Cisco</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="category-title">⌨️ Développement & Automatisation</h4>
+        <div class="projects-grid">
+            <div class="project-card clickable" onclick="openModal('modal-dev-python')">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Python Code" class="project-image">
+                <div class="project-content">
+                    <h4>SAÉ - Application de Gestion IP</h4>
+                    <p>Développement d'une application web pour l'attribution automatisée d'adresses IP clients et la génération de configuration Cisco.</p>
+                    <ul class="tech-list">
+                        <li>Python / Flask</li>
+                        <li>SQLite</li>
+                        <li>Cisco</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="category-title" style="margin-top: 4rem;">🏢 Expérience Professionnelle</h4>
+        <div class="projects-grid">
+            <div class="project-card" style="border: 1px solid var(--accent);">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Corporate Office" class="project-image">
+                <div class="project-content">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h4 style="margin: 0;">Stage - WIMBEE FRANCE</h4>
+                        <span style="background-color: var(--accent); color: var(--bg-color); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold;">EN COURS</span>
+                    </div>
+                    <p><strong>Administrateur Système, réseaux et sécurité (Depuis Avril 2026).</strong><br>
+                    J'administre actuellement les systèmes et l'environnement Microsoft 365 au sein de la BU Digitale. J'assure le support technique utilisateur (N1/N2), la résolution des incidents et la rédaction des procédures techniques.</p>
+                    <ul class="tech-list">
+                        <li>Microsoft 365</li>
+                        <li>Support IT</li>
+                        <li>Gouvernance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h3 class="section-title"><span>04.</span> Contact</h3>
+        <p>Je suis actuellement à la recherche d'un stage de 8 à 12 semaines en Réseaux et Cybersécurité.</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:jawher.baroudi19@gmail.com">jawher.baroudi19@gmail.com</a></p>
+            <p>Téléphone: 07 67 72 88 74</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jawher-baroudi" target="_blank">linkedin.com/in/jawher-baroudi</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Design & Code par Jawher Baroudi &copy; 2026</p>
+    </footer>
+
+    <div id="modal-pentesting" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-pentesting')">&times;</span>
+            <h2 style="color: var(--text-main); margin-bottom: 1rem;">SAÉ - Découvrir le Pentesting</h2>
+            <div class="modal-body">
+                <p><strong>Contexte :</strong> Audit d'un réseau local virtuel isolé (NAT VirtualBox) composé d'une machine attaquante (Kali Linux) et de cibles vulnérables (Windows XP obsolète et serveur Metasploitable).</p>
+                <br>
+                <p><strong>Missions réalisées :</strong></p>
+                <ul style="margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>Scan de vulnérabilités :</strong> Utilisation de Tenable Nessus et Nmap pour automatiser la détection des failles CVE.</li>
+                    <li><strong>Exploitation système :</strong> Utilisation de Metasploit pour exploiter les failles MS08-067 (Exécution de code à distance) et attaques DoS (MS09-001).</li>
+                    <li><strong>Exploitation de services Web :</strong> Infiltration via la backdoor UnrealIRCd, exploitation de la faille Tomcat Ghostcat (AJP Injection) et Samba Badlock.</li>
+                    <li><strong>Post-Exploitation :</strong> Déploiement de Keylogger, extraction de base de données SAM (Hashdump), et prise de contrôle VNC.</li>
+                </ul>
+                <br>
+                <a href="SAE_Decouvrir_le_Pentesting.pdf" target="_blank" class="btn">📥 Lire le rapport complet (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-nasa" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-nasa')">&times;</span>
+            <h2 style="color: var(--text-main); margin-bottom: 1rem;">Rapport d'Étude : Cyberattaque de la NASA</h2>
+            <div class="modal-body">
+                <p><strong>Contexte :</strong> Analyse technique détaillée de l'incident de sécurité majeur d'avril 2018 ayant ciblé le Jet Propulsion Laboratory (JPL) de la NASA, orchestré par le groupe APT10 (Red Apollo) via l'introduction d'un Raspberry Pi.</p>
+                <br>
+                <p><strong>Missions réalisées (Analyse) :</strong></p>
+                <ul style="margin-left: 20px; color: var(--text-secondary);">
+                    <li>Étude du mode opératoire des attaquants (APT10) et de leur capacité à contourner les systèmes de détection pendant près de 10 mois.</li>
+                    <li>Identification des vulnérabilités critiques ayant permis l'intrusion : appareils non patchés, manque de segmentation réseau permettant le déplacement latéral, et erreurs humaines (manque de vigilance).</li>
+                    <li>Analyse de l'impact de l'attaque : vol de 500 Mo de données sensibles et confidentielles, incluant des informations liées aux missions spatiales (ITAR).</li>
+                    <li>Élaboration de préconisations de sécurité : renforcement de la segmentation des réseaux, intégration d'outils de surveillance temps réel (IDS, Splunk ES), Threat Hunting et politique de mise à jour (Patch Management).</li>
+                </ul>
+                <br>
+                <a href="rapport_fial_cyberattaques.pdf" target="_blank" class="btn">📥 Lire le rapport (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-valence" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-valence')">&times;</span>
+            <h2 style="color: var(--text-main); margin-bottom: 1rem;">SAÉ - Réseau sécurisé multi-site (Ville de Valence)</h2>
+            <div class="modal-body">
+                <p><strong>Contexte :</strong> Rédaction d'un mémoire technique pour la modernisation et la sécurisation du Système d'Information de la Ville de Valence (Budget : 63 800 € HT).</p>
+                <br>
+                <p><strong>Missions réalisées :</strong></p>
+                <ul style="margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>Virtualisation Haute Disponibilité :</strong> Conception d'une architecture Cluster Hyper-V avec un stockage partagé en RAID 10 pour héberger 12 Machines Virtuelles critiques.</li>
+                    <li><strong>Sécurité Réseau (DICP) :</strong> Segmentation stricte par VLANs et chiffrement WPA3-Enterprise / 802.1x pour les liaisons Wi-Fi.</li>
+                    <li><strong>Plan de Continuité (PCA) :</strong> Mise en place d'une politique de sauvegarde "3-2-1" avec externalisation sur un site distant via Veeam Backup.</li>
+                    <li><strong>Gouvernance :</strong> Déploiement de stratégies de durcissement (GPO) et gestion des risques projet.</li>
+                </ul>
+                <br>
+                <a href="Sae_Concevoir_reseau_multisite.pdf" target="_blank" class="btn">📥 Lire le mémoire technique (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-dev-python" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-dev-python')">&times;</span>
+            <h2 style="color: var(--text-main); margin-bottom: 1rem;">SAÉ - Application de Gestion d'Adressage IP</h2>
+            <div class="modal-body">
+                <p><strong>Contexte :</strong> Développement d'une application web complète pour permettre à une start-up de gérer efficacement sa base clients et d'automatiser l'attribution de ses adresses IP publiques.</p>
+                <br>
+                <p><strong>Missions réalisées :</strong></p>
+                <ul style="margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>Développement Full-Stack :</strong> Création de l'interface et du back-end en utilisant le framework Python <strong>Flask</strong>, avec authentification sécurisée.</li>
+                    <li><strong>Base de données (SQLite / SQLAlchemy) :</strong> Modélisation et gestion relationnelle des clients, des statuts d'IP (Libre, Allouée, Réservée) et des sous-réseaux.</li>
+                    <li><strong>Logique d'automatisation :</strong> Attribution dynamique des adresses IP, des VLANs, VRF et Route Distinguisher (RD) en fonction du groupe d'appartenance du client.</li>
+                    <li><strong>Réseau & Scripting :</strong> Génération automatique du code de configuration <strong>Cisco</strong> prêt à être copié/collé sur les équipements physiques.</li>
+                </ul>
+                <br>
+                <a href="SAE23_G2_Guermat_Baroudi.pdf" target="_blank" class="btn">📥 Lire le compte-rendu (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
