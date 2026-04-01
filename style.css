@@ -411,8 +411,10 @@ footer {
 
 .about-image img {
     width: 100%;
-    border-radius: 12px;
-    border: 2px solid var(--accent);
+    aspect-ratio: 1 / 1; /* Force l'image à être un carré parfait */
+    object-fit: cover; /* Recadre l'image proprement sans l'écraser */
+    border-radius: 50%; /* Transforme le carré en un cercle parfait */
+    border: 3px solid var(--accent); /* Bordure colorée autour du cercle */
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
 }
