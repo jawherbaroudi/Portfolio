@@ -433,3 +433,38 @@ footer {
         margin-bottom: 20px;
     }
 }
+
+/* ===================================================
+   NOUVEAUX STYLES POUR LA PHOTO DE PROFIL EN HAUT
+====================================================== */
+
+/* Modification du container du logo pour l'alignement */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espace entre l'image et le texte "JB." */
+    text-decoration: none; /* Enlève le soulignement du lien */
+    color: var(--accent); /* Force la couleur du texte "JB." */
+}
+
+/* Style spécifique pour la photo dans la navigation */
+.nav-profil-img {
+    width: 40px; /* Taille appropriée pour la navbar */
+    height: 40px;
+    object-fit: cover; /* Empêche de déformer l'image */
+    border-radius: 50%; /* Rend l'image parfaitement ronde */
+    border: 2px solid var(--accent); /* Bordure colorée autour du rond */
+    transition: transform 0.3s ease;
+}
+
+/* Petit effet au survol sur l'image */
+.nav-profil-img:hover {
+    transform: scale(1.1);
+}
+
+/* On force le texte "JB." à garder son style d'origine */
+.logo span {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
