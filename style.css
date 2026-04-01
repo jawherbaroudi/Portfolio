@@ -392,3 +392,42 @@ footer {
     section { padding: 50px 5% 30px; }
     .nav-links { display: none; }
 }
+
+/* ---- NOUVEAU DESIGN POUR LA PHOTO DE PROFIL ---- */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1; /* Le texte prend la majorité de la place */
+}
+
+.about-image {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid var(--accent);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: translateY(-5px);
+}
+
+/* On remet l'image en haut si on est sur un téléphone */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column-reverse;
+    }
+    .about-image {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
