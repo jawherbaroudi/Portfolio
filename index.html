@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jawher Baroudi - Portfolio BUT RT</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 fill=%22%2364ffda%22>JB</text></svg>">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -35,15 +36,22 @@
 
     <section id="about">
         <h3 class="section-title"><span>01.</span> Mon Profil</h3>
-        <p style="margin-bottom: 15px;">
-            Actuellement étudiant en 2ème année de BUT Réseaux et Télécommunications à l'IUT de Villetaneuse, je me spécialise dans la sécurisation des infrastructures et l'administration système. Mon parcours est guidé par une curiosité technique insatiable : j'aime comprendre comment les systèmes communiquent pour mieux les protéger.
-        </p>
-        <p style="margin-bottom: 15px;">
-            Au-delà de la technique, mon expérience de <strong>Recruteur de donateurs</strong> m'a permis de développer des compétences humaines rares dans le secteur de l'IT. Cette immersion professionnelle m'a appris à gérer le stress, à cultiver une résilience à toute épreuve face aux refus, et surtout à adapter mon discours technique pour le rendre clair et convaincant auprès de n'importe quel interlocuteur.
-        </p>
-        <p>
-            Qu'il s'agisse de réaliser un audit de vulnérabilités (Pentest), de concevoir une architecture réseau complexe ou d'automatiser des processus via Python, je m'engage avec la même rigueur. Mon stage chez <strong>WIMBEE FRANCE</strong> est la preuve de mon ambition : intégrer des environnements exigeants pour apporter une réelle valeur ajoutée au collectif.
-        </p>
+        <div class="about-container">
+            <div class="about-text">
+                <p style="margin-bottom: 15px;">
+                    Actuellement étudiant en 2ème année de BUT Réseaux et Télécommunications à l'IUT de Villetaneuse, je me spécialise dans la sécurisation des infrastructures et l'administration système. Mon parcours est guidé par une curiosité technique insatiable : j'aime comprendre comment les systèmes communiquent pour mieux les protéger.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    Au-delà de la technique, mon expérience de <strong>Recruteur de donateurs</strong> m'a permis de développer des compétences humaines rares dans le secteur de l'IT. Cette immersion professionnelle m'a appris à gérer le stress, à cultiver une résilience à toute épreuve face aux refus, et surtout à adapter mon discours technique pour le rendre clair et convaincant auprès de n'importe quel interlocuteur.
+                </p>
+                <p>
+                    Qu'il s'agisse de réaliser un audit de vulnérabilités (Pentest), de concevoir une architecture réseau complexe ou d'automatiser des processus via Python, je m'engage avec la même rigueur. Mon expérience chez <strong>WIMBEE FRANCE</strong> est la preuve de mon ambition : intégrer des environnements exigeants pour apporter une réelle valeur ajoutée au collectif.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="profil.png" alt="Photo de Jawher Baroudi">
+            </div>
+        </div>
     </section>
 
     <section id="skills">
@@ -254,7 +262,7 @@
 
         <h4 class="category-title" style="margin-top: 4rem;">🏢 Expérience Professionnelle</h4>
         <div class="projects-grid">
-            <div class="project-card" style="border: 1px solid var(--accent);">
+            <div class="project-card clickable" style="border: 1px solid var(--accent);" onclick="openModal('modal-wimbee')">
                 <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Corporate Office" class="project-image">
                 <div class="project-content">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
@@ -265,7 +273,7 @@
                     J'administre actuellement les systèmes et l'environnement Microsoft 365 au sein de la BU Digitale. J'assure le support technique utilisateur (N1/N2), la résolution des incidents et la rédaction des procédures techniques.</p>
                     <ul class="tech-list">
                         <li>Microsoft 365</li>
-                        <li>Support IT</li>
+                        <li>Azure AD</li>
                         <li>Gouvernance</li>
                     </ul>
                 </div>
@@ -275,8 +283,8 @@
     </section>
 
     <section id="contact">
-        <h3 class="section-title"><span>04.</span> Contact</h3>
-        <p>Je suis actuellement à la recherche d'un stage de 8 à 12 semaines en Réseaux et Cybersécurité.</p>
+        <h3 class="section-title"><span>04.</span> Me Contacter</h3>
+        <p>Je suis toujours ouvert aux échanges techniques et aux nouvelles opportunités de collaboration dans le domaine des infrastructures et de la cybersécurité.</p>
         <div class="contact-info">
             <p>Email: <a href="mailto:jawher.baroudi19@gmail.com">jawher.baroudi19@gmail.com</a></p>
             <p>Téléphone: 07 67 72 88 74</p>
@@ -287,6 +295,24 @@
     <footer>
         <p>Design & Code par Jawher Baroudi &copy; 2026</p>
     </footer>
+
+    <div id="modal-wimbee" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-wimbee')">&times;</span>
+            <h2 style="color: var(--text-main); margin-bottom: 1rem;">🏢 Stage - Administrateur M365 (WIMBEE FRANCE)</h2>
+            <div class="modal-body">
+                <p><strong>Contexte :</strong> Intégré au sein de la BU Digitale, je suis en charge de l'administration quotidienne, du support utilisateur et de la sécurisation globale des environnements Microsoft 365 de l'entreprise.</p>
+                <br>
+                <p><strong>Missions réalisées :</strong></p>
+                <ul style="margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>Support & Résolution (N1/N2) :</strong> Prise en charge des tickets utilisateurs, diagnostic des incidents réseau/système et rédaction de procédures techniques.</li>
+                    <li><strong>Gestion des Identités (Azure AD / Entra ID) :</strong> Création, modification et sécurisation des comptes utilisateurs, gestion des groupes et des droits d'accès.</li>
+                    <li><strong>Sécurité Cloud :</strong> Déploiement et maintien des politiques de sécurité strictes, notamment l'authentification multifacteur (MFA) et les règles d'accès conditionnel (Conditional Access).</li>
+                    <li><strong>Automatisation & Scripting :</strong> Conception de scripts de déploiement pour automatiser les tâches d'administration redondantes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div id="modal-microprocesseur" class="modal">
         <div class="modal-content">
