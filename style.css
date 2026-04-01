@@ -468,3 +468,30 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
 }
+/* ---- DESIGN POUR LA PHOTO DANS LA NAVIGATION ---- */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    text-decoration: none; 
+}
+
+.nav-profil-img {
+    width: 45px; /* La petite taille parfaite pour le menu */
+    height: 45px;
+    object-fit: cover; /* Empêche l'image d'être déformée */
+    border-radius: 50%; /* Rend l'image parfaitement ronde */
+    border: 2px solid var(--accent); /* Petite bordure colorée */
+    transition: transform 0.3s ease;
+}
+
+.nav-profil-img:hover {
+    transform: scale(1.1); /* Petit zoom quand on passe la souris */
+}
+
+.logo span {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+}
