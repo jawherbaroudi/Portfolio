@@ -29,15 +29,21 @@
         </p>
         <div class="button-group">
             <a href="#contact" class="btn">Me contacter</a>
-            <a href="CV_Baroudi_Jawher.pdf" class="btn btn-outline" target="_blank">📄 Télécharger mon CV</a>
+            <a href="CV-1.pdf" class="btn btn-outline" target="_blank">📄 Télécharger mon CV</a>
         </div>
     </header>
 
     <section id="about">
         <h3 class="section-title"><span>01.</span> Mon Profil</h3>
-        <p style="margin-bottom: 15px;">Actuellement en 2ème année de BUT Réseaux et Télécommunications à l'IUT de Villetaneuse, je suis un véritable passionné des infrastructures informatiques et de la cybersécurité.</p>
-        <p style="margin-bottom: 15px;">Mon profil se distingue par une double approche : une solide base technique (administration de serveurs, déploiement d'architectures réseaux, pentesting et développement Python) alliée à un excellent sens du relationnel. Mon expérience en tant que recruteur de donateurs m'a forgé une forte résilience, une grande aisance à l'oral et une capacité à m'adapter à tout type d'interlocuteur.</p>
-        <p>Que ce soit pour auditer une faille de sécurité, concevoir un réseau sous GNS3 ou automatiser une tâche système, j'aborde chaque défi technique avec rigueur et curiosité. Je suis aujourd'hui à la recherche d'un stage de 8 à 12 semaines pour mettre mon énergie et mes compétences au service d'une équipe professionnelle.</p>
+        <p style="margin-bottom: 15px;">
+            Actuellement étudiant en 2ème année de BUT Réseaux et Télécommunications à l'IUT de Villetaneuse, je me spécialise dans la sécurisation des infrastructures et l'administration système. Mon parcours est guidé par une curiosité technique insatiable : j'aime comprendre comment les systèmes communiquent pour mieux les protéger.
+        </p>
+        <p style="margin-bottom: 15px;">
+            Au-delà de la technique, mon expérience de <strong>Recruteur de donateurs</strong> m'a permis de développer des compétences humaines rares dans le secteur de l'IT. Cette immersion professionnelle m'a appris à gérer le stress, à cultiver une résilience à toute épreuve face aux refus, et surtout à adapter mon discours technique pour le rendre clair et convaincant auprès de n'importe quel interlocuteur.
+        </p>
+        <p>
+            Qu'il s'agisse de réaliser un audit de vulnérabilités (Pentest), de concevoir une architecture réseau complexe ou d'automatiser des processus via Python, je m'engage avec la même rigueur. Mon stage chez <strong>WIMBEE FRANCE</strong> est la preuve de mon ambition : intégrer des environnements exigeants pour apporter une réelle valeur ajoutée au collectif.
+        </p>
     </section>
 
     <section id="skills">
@@ -162,6 +168,19 @@
                 </div>
             </div>
 
+            <div class="project-card clickable" onclick="openModal('modal-transmission')">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" alt="Fibre Optique" class="project-image">
+                <div class="project-content">
+                    <h4>SAÉ - Transmission Optique</h4>
+                    <p>Déploiement d'une liaison fibre optique (10 km). Mesures OTDR, analyse sur oscilloscope et régénération de signal Gigabit.</p>
+                    <ul class="tech-list">
+                        <li>Fibre Optique</li>
+                        <li>OTDR / EXFO</li>
+                        <li>Oscilloscope</li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="project-card">
                 <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="Network Cables" class="project-image">
                 <div class="project-content">
@@ -227,6 +246,27 @@
     <footer>
         <p>Design & Code par Jawher Baroudi &copy; 2026</p>
     </footer>
+
+    <div id="modal-transmission" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-transmission')">&times;</span>
+            <h2 style="color: var(--text-main); margin-bottom: 1rem;">SAÉ - Système de Transmission Optique</h2>
+            <div class="modal-body">
+                <p><strong>Contexte :</strong> Conception, montage et caractérisation d'une liaison de transmission optique en anneau sur 10 km de fibre, intégrant une étude des enjeux énergétiques[cite: 4].</p>
+                <br>
+                <p><strong>Missions réalisées :</strong></p>
+                <ul style="margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>Caractérisation physique :</strong> Évaluation des pertes de signal sur la ligne à l'aide d'un réflectomètre optique (OTDR)[cite: 4].</li>
+                    <li><strong>Analyse de signal :</strong> Mesure et visualisation des signaux électriques dégradés après leur passage dans le photodétecteur (au bout des 10 km) à l'aide d'un oscilloscope[cite: 3, 4].</li>
+                    <li><strong>Régénération :</strong> Utilisation d'une plateforme modulaire industrielle <strong>EXFO IQS-610P</strong> (équipée de 10 slots) pour nettoyer et remettre en forme le signal numérique binaire[cite: 3].</li>
+                    <li><strong>Synchronisation :</strong> Récupération du rythme (Clock Recovery) pour échantillonner les données précisément et maintenir un flux réseau Gigabit stable (> 1 Gbit/s)[cite: 3].</li>
+                    <li><strong>Validation :</strong> Calcul du taux d'erreur binaire (BERT) à l'aide des logiciels d'analyse pour attester de la fiabilité finale de la transmission[cite: 3].</li>
+                </ul>
+                <br>
+                <a href="SAE_systeme_de_transmission.pdf" target="_blank" class="btn">📥 Lire le dossier de conception (PDF)</a>
+            </div>
+        </div>
+    </div>
 
     <div id="modal-pentesting" class="modal">
         <div class="modal-content">
