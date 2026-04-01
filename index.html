@@ -195,8 +195,9 @@
             </div>
         </div>
 
-        <h4 class="category-title">⌨️ Développement & Automatisation</h4>
+        <h4 class="category-title">⌨️ Développement & Architecture</h4>
         <div class="projects-grid">
+            
             <div class="project-card clickable" onclick="openModal('modal-dev-python')">
                 <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Python Code" class="project-image">
                 <div class="project-content">
@@ -209,6 +210,20 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="project-card clickable" onclick="openModal('modal-microprocesseur')">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Circuit Board" class="project-image">
+                <div class="project-content">
+                    <h4>SAÉ - Architecture Microprocesseur</h4>
+                    <p>Conception et simulation d'un microprocesseur 4 bits. Gestion de l'ALU, du banc de registres et de l'unité de contrôle.</p>
+                    <ul class="tech-list">
+                        <li>Logique Binaire</li>
+                        <li>ALU / Registres</li>
+                        <li>Architecture Matérielle</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
         <h4 class="category-title" style="margin-top: 4rem;">🏢 Expérience Professionnelle</h4>
@@ -247,20 +262,40 @@
         <p>Design & Code par Jawher Baroudi &copy; 2026</p>
     </footer>
 
+    <div id="modal-microprocesseur" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-microprocesseur')">&times;</span>
+            <h2 style="color: var(--text-main); margin-bottom: 1rem;">SAÉ - Architecture Microprocesseur</h2>
+            <div class="modal-body">
+                <p><strong>Contexte :</strong> Conception, logique et simulation d'un microprocesseur 4 bits complet[cite: 2548, 2550], capable d'exécuter des instructions arithmétiques tout en gérant le flux de données entre ses différents composants.</p>
+                <br>
+                <p><strong>Missions réalisées :</strong></p>
+                <ul style="margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong>Unité de Traitement (ALU) :</strong> Mise en place de l'Arithmetic Logic Unit pour gérer les calculs arithmétiques fondamentaux comme l'addition (Add_4) et la soustraction (Sub_4)[cite: 2588, 2589, 2833].</li>
+                    <li><strong>Unité de Mémoire :</strong> Intégration d'un banc de registres (RAM) pour le stockage temporaire [cite: 2628, 2632], et configuration de l'accumulateur (ACC) destiné à stocker et transmettre le résultat final[cite: 2633].</li>
+                    <li><strong>Unité de Contrôle (CU) :</strong> Programmation des signaux de contrôle (Op, WR_ACC, WR_RB, Adr, Sel) pour coordonner le trafic des données[cite: 2575, 2582, 2583, 2584].</li>
+                    <li><strong>Tests et Validation matérielle :</strong> Simulation et exécution d'instructions (ex: l'addition 7+3 et la soustraction 10-6) avec affichage direct des résultats en binaire sur des LEDs via un microcontrôleur[cite: 2658, 2659, 2660, 2661, 2679, 2786, 2792, 2794, 2796].</li>
+                </ul>
+                <br>
+                <a href="SAE13_1_Gr2_RIASAT_BAROUDI.pdf" target="_blank" class="btn">📥 Lire le compte-rendu technique (PDF)</a>
+            </div>
+        </div>
+    </div>
+
     <div id="modal-transmission" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('modal-transmission')">&times;</span>
             <h2 style="color: var(--text-main); margin-bottom: 1rem;">SAÉ - Système de Transmission Optique</h2>
             <div class="modal-body">
-                <p><strong>Contexte :</strong> Conception, montage et caractérisation d'une liaison de transmission optique en anneau sur 10 km de fibre, intégrant une étude des enjeux énergétiques[cite: 4].</p>
+                <p><strong>Contexte :</strong> Conception, montage et caractérisation d'une liaison de transmission optique en anneau sur 10 km de fibre, intégrant une étude des enjeux énergétiques.</p>
                 <br>
                 <p><strong>Missions réalisées :</strong></p>
                 <ul style="margin-left: 20px; color: var(--text-secondary);">
-                    <li><strong>Caractérisation physique :</strong> Évaluation des pertes de signal sur la ligne à l'aide d'un réflectomètre optique (OTDR)[cite: 4].</li>
-                    <li><strong>Analyse de signal :</strong> Mesure et visualisation des signaux électriques dégradés après leur passage dans le photodétecteur (au bout des 10 km) à l'aide d'un oscilloscope[cite: 3, 4].</li>
-                    <li><strong>Régénération :</strong> Utilisation d'une plateforme modulaire industrielle <strong>EXFO IQS-610P</strong> (équipée de 10 slots) pour nettoyer et remettre en forme le signal numérique binaire[cite: 3].</li>
-                    <li><strong>Synchronisation :</strong> Récupération du rythme (Clock Recovery) pour échantillonner les données précisément et maintenir un flux réseau Gigabit stable (> 1 Gbit/s)[cite: 3].</li>
-                    <li><strong>Validation :</strong> Calcul du taux d'erreur binaire (BERT) à l'aide des logiciels d'analyse pour attester de la fiabilité finale de la transmission[cite: 3].</li>
+                    <li><strong>Caractérisation physique :</strong> Évaluation des pertes de signal sur la ligne à l'aide d'un réflectomètre optique (OTDR).</li>
+                    <li><strong>Analyse de signal :</strong> Mesure et visualisation des signaux électriques dégradés après leur passage dans le photodétecteur (au bout des 10 km) à l'aide d'un oscilloscope.</li>
+                    <li><strong>Régénération :</strong> Utilisation d'une plateforme modulaire industrielle <strong>EXFO IQS-610P</strong> (équipée de 10 slots) pour nettoyer et remettre en forme le signal numérique binaire.</li>
+                    <li><strong>Synchronisation :</strong> Récupération du rythme (Clock Recovery) pour échantillonner les données précisément et maintenir un flux réseau Gigabit stable (> 1 Gbit/s).</li>
+                    <li><strong>Validation :</strong> Calcul du taux d'erreur binaire (BERT) à l'aide des logiciels d'analyse pour attester de la fiabilité finale de la transmission.</li>
                 </ul>
                 <br>
                 <a href="SAE_systeme_de_transmission.pdf" target="_blank" class="btn">📥 Lire le dossier de conception (PDF)</a>
