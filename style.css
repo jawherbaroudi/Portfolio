@@ -478,3 +478,32 @@ footer {
         margin-bottom: 20px;
     }
 }
+/* ===================================================
+   ENCART EXPLICATION SAÉ
+====================================================== */
+.sae-info-box {
+    background-color: rgba(100, 255, 218, 0.05); /* Fond très discret */
+    border-left: 4px solid var(--accent); /* Barre colorée sur le côté */
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem; /* Espace avant les cartes de projets */
+    border-radius: 0 8px 8px 0;
+}
+
+.sae-info-box h3 {
+    color: var(--accent);
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+}
+
+.sae-info-box p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.sae-info-box strong {
+    color: var(--text-main); /* Fait ressortir les mots clés comme "jury" */
+}
