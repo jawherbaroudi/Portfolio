@@ -509,39 +509,40 @@ footer {
 }
 
 /* ===================================================
-   BANNIÈRE ÉCOSYSTÈME (LOGOS)
+   BANNIÈRE ÉCOSYSTÈME (LOGOS À LA FIN)
 ====================================================== */
 .logo-banner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 60px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .eco-logo {
-    height: 45px; /* Hauteur fixe pour que tous les logos soient alignés */
+    height: 40px; /* Hauteur fixe pour aligner tous les logos */
     max-width: 150px;
     object-fit: contain;
-    /* L'astuce pro : on met les logos en gris et un peu transparents */
-    filter: grayscale(100%) opacity(0.6); 
-    transition: all 0.3s ease;
+    /* Effet professionnel : gris et légèrement transparents au repos */
+    filter: grayscale(100%) opacity(0.5); 
+    transition: all 0.4s ease;
     cursor: default;
 }
 
-/* Au survol : le logo retrouve ses vraies couleurs */
+/* Au survol : le logo retrouve ses couleurs d'origine et grossit légèrement */
 .eco-logo:hover {
     filter: grayscale(0%) opacity(1);
-    transform: translateY(-3px);
+    transform: scale(1.1);
 }
 
+/* Ajustement pour les téléphones */
 @media (max-width: 768px) {
     .logo-banner {
         gap: 30px;
     }
     .eco-logo {
-        height: 35px;
+        height: 30px;
     }
 }
